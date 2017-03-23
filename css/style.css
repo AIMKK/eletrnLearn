@@ -30,27 +30,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#title-bar {
- -webkit-app-region: drag;
- height: 24px; 
- background-color: #007ACC;
- padding: none;
- margin: 0px; 
-}
-
-#title {
- position: fixed;
- top: 0px;
- left: 6px; 
-}
-
-#title-bar-btns {
- -webkit-app-region: no-drag;
- position: fixed;
- top: 0px;
- right: 6px;
-}
-
 .login {
   width: 400px;
   margin: 16px auto;
