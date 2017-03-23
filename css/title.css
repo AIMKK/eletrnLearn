@@ -18,3 +18,9 @@
  top: 0px;
  right: 6px;
 }
+#title-bar-btns button {	
+	background-color: transparent;
+	border: none;
+	color: #F1F1F1;
+	font-size: 16px;
+}
