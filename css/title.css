@@ -1,4 +1,5 @@
 #title-bar {
+
  -webkit-app-region: drag;
  height: 24px; 
  background-color: #007ACC;
@@ -18,6 +19,7 @@
  top: 0px;
  right: 6px;
 }
+
 #title-bar-btns button {	
 	background-color: transparent;
 	border: none;
