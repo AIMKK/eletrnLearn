@@ -1,5 +1,5 @@
 
-const path=require('path');
+const path = require('path');
 const electron = require('electron');
 // Module to control application life.
 const { app } = electron;
@@ -30,7 +30,7 @@ function createWindow() {
 
   // // Open the DevTools.
   // loginWin.webContents.openDevTools();
-  
+
   loginWin.on('closed', () => {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
@@ -83,7 +83,7 @@ function createWindow() {
 
   // 给右下角图标绑定右键菜单
   tray.setContextMenu(contextMenu);
-  
+
   // 绑定双击事件，让其窗口显示
   tray.on('double-click', function () {
     if (contentWindow) {
