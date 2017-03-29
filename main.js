@@ -113,13 +113,13 @@ function createWindow() {
     contentWindow = new BrowserWindow({
       frame: false,
       height: 700,
-      resizable: false,
+      resizable: true,
       width: 900,
       //icon:'3.ico',
       frame: false,
       show: false,
     });
-    contentWindow.loadURL('file://' + __dirname + '/mainWin.html');
+    contentWindow.loadURL('file://' + __dirname + '/spa.html');
     
     contentWindow.webContents.openDevTools();
     contentWindow.webContents.on('did-finish-load', function () {
