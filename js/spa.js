@@ -7,6 +7,7 @@
 var spa = (function () {
     'use strict';
     var initModule = function ($container) {
+        spa.data.initModule();
         spa.model.initModule();
         // housekeeping here ...
         // if we needed to configure the Shell,

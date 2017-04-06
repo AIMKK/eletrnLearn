@@ -213,7 +213,7 @@ spa.shell = (function () {
     onTapAcct = function (event) {
         var acct_text, user_name, user = spa.model.people.get_user();
         if (user.get_is_anon()) {
-            user_name = prompt('Please sign-in');
+            user_name = 'bob';//prompt('Please sign-in');
             spa.model.people.login(user_name);
             jqueryMap.$acct.text('... processing ...');
         }
@@ -282,6 +282,12 @@ spa.shell = (function () {
             people_model: spa.model.people
         });
         spa.chat.initModule(jqueryMap.$container);
+        
+        spa.avtr.configModule({
+            chat_model: spa.model.chat,
+            people_model: spa.model.people
+        });
+        spa.avtr.initModule(jqueryMap.$nav);
         // Handle URI anchor change events.
         // This is done /after/ all feature modules are configured
         // and initialized, otherwise they will not be ready to handle
