@@ -32,7 +32,8 @@ app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser()); // pull information from html in POST
 app.use(methodOverride());  // simulate DELETE and PUT
 
-app.use(basicAuth('user', 'spa'));
+// app.use(basicAuth('user', 'spa'));
+
 // app.use(function(req, res, next) {
 //     var user = auth(req);
 
