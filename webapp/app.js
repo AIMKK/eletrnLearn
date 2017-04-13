@@ -14,7 +14,7 @@ white : true
 var
     http = require('http'),
     express = require('express'),
-    routes = require( './routes' ),
+    routes = require( './lib/routes' ),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override'),
