@@ -21,6 +21,7 @@ configRoutes = function (app, server) {
     app.get('/', function (request, response) {
         response.redirect('/spa.html');
     });
+    
     app.all('/:obj_type/*?', function (request, response, next) {
         response.contentType('json');
         next();
