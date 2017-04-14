@@ -13,6 +13,7 @@ white : true
 var
     configRoutes,
     crud = require('./crud'),
+    chat = require( './chat' ),
     makeMongoId = crud.makeMongoId;
 // ------------- END MODULE SCOPE VARIABLES ---------------
 // ---------------- BEGIN PUBLIC METHODS ------------------
@@ -61,6 +62,8 @@ configRoutes = function (app, server) {
             function (result_map) { response.send(result_map); }
         );
     });
+    
+    chat.connect( server );
 };
 module.exports = { configRoutes: configRoutes };
 // ----------------- END PUBLIC METHODS -------------------
