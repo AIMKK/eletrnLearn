@@ -5,7 +5,10 @@ let win;
 function createWindow() {
     // 创建窗口并加载页面
     win = new BrowserWindow({
-        width: 800, height: 600//, frame: false
+        width: 850, height: 500, frame: false
+        //,resizable:false        
+        //,transparent: true   
+             
     });
     win.loadURL('file://' + __dirname + '/frontend/login.html');
 

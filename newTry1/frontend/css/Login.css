@@ -1,69 +1,70 @@
 
 
 body {
-  background: #456;
+  background: rgba(0, 0, 0, 0);
   font-family: 'Open Sans', sans-serif; 
 }
-
-#main {
-  position : absolute;
-  top : 0;
-  left : 0;
-  bottom : 0;
-  right : 0; 
-  min-height : 15em;
-  min-width : 35em;
-  overflow : hidden;
+.border{
+  position: absolute;   
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+ -webkit-app-region: drag;
+  background: #354963;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:0px;
+ 
 }
 
-.login {  
+.login { 
+  -webkit-app-region: no-drag;
+  position: absolute;    
+  top: 50%;
+  left: 50%;
   width: 400px;
-  margin: 16px auto;  
+  /*height: 300px;
+  margin-top: -150px;
+  margin-left: -200px;*/ 
+  -webkit-transform: translateX(-50%) translateY(-55%);
+  -moz-transform: translateX(-50%) translateY(-55%);
+  -ms-transform: translateX(-50%) translateY(-55%);
+  transform: translateX(-50%) translateY(-55%);
   font-size: 16px; 
 }
 
 
 
-/* Reset top and bottom margins from certain elements */
-
-.login p {  
-  margin-top: 0;
-  margin-bottom: 0;  
- 
-}
-
-
-.login-header { 
-  background: #28d;  
-  border-radius:5px 5px 0px 0px; 
-}
-.login-header h2 {
-  
+.login-header {   
+  background: #28d;
   padding: 10px;
   font-size: 1.4em;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  border-radius:5px 5px 0px 0px; 
 }
 
-.login-container {
-  
+.login-header h2{
+  margin-top: 0;
+  margin-bottom: 0;  
+}
+.login-container {  
   background: #ebebeb;
   padding: 12px;
 }
 
-/* Every row inside .login-container is defined with p tags */
-.login p {
- 
+
+.login-container p {
+  margin-top: 0;
+  margin-bottom: 0;  
   padding: 12px;
 }
 
-.login input {
-  
+.login-container input {  
   box-sizing: border-box;
-  display: block;
-  width: 100%;
+  display: block; 
   border-width: 1px;
   border-style: solid;
   padding: 10px;
@@ -72,31 +73,50 @@ body {
   font-size: 0.95em;
 }
 
-.login input[type="email"],
-.login input[type="password"] {
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
   background: #fff;
   border-color: #bbb;
   color: #555;
 }
 
 /* Text fields' focus effect */
-.login input[type="email"]:focus,
-.login input[type="password"]:focus {
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
   border-color: #888;
 }
 
-.login input[type="submit"] {
+.commdBtn{
+  font-size: 0px;
+}
+.commdBtn .submitBtn,
+.commdBtn .exitBtn {  
+  width: calc(40%-5px);
   background: #28d;
   border-color: transparent;
   color: #fff;
   cursor: pointer;
+ 
 }
 
-.login input[type="submit"]:hover {
+.commdBtn .submitBtn:hover {
   background: #17c;
 }
 
 /* Buttons' focus effect */
-.login input[type="submit"]:focus {
+.commdBtn .submitBtn:focus {
   border-color: #05a;
+}
+
+.commdBtn input {
+  display:inline;
+  font-size: 14px;   
+}
+.submitBtn{
+  margin-right: 5px;
+}
+.exitBtn{
+  margin-left: 5px;
 }
