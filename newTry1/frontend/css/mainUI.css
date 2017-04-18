@@ -1,0 +1,62 @@
+body{
+    background: rgba(0, 0, 0, 0);
+}
+.mainUI{
+    position:  absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;    
+}
+.nav{
+    -webkit-app-region: drag;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom:0px;  
+    width: 200px;
+    background:#28435C;
+}
+.nav-header{   
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    height: 2px;
+    background:#5394C8;  
+}
+.content{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    background: #FAFBFD;    
+}
+.content-header{
+    -webkit-app-region: drag;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    height: 2px;
+    /*background:#5394C8;*/
+    background: #5394C8;
+    /*background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#6C8BAA), to(#2B435B));*/
+}
+.content-header-spliter{
+    position: absolute;   
+    left: 0px;
+    right: 0px;
+    height: 0px; 
+    bottom: 0px;   
+    background: #5394C8;
+}
+.content-footer{
+    position:absolute;
+    bottom: 0px;
+    height: 0px;
+    left: 0px;
+    right: 0px;
+    background: #DADADA;
+}
