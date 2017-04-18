@@ -5,11 +5,11 @@ var loginUI = require('./htmljs/loginUI');
 var mainUI;
 let win;
 
-
-
 app.on('ready', () => {   
      var UI = require('./htmljs/mainUI');
     UI(BrowserWindow);
+    loginUI = require('./htmljs/loginUI');
+    loginUI(BrowserWindow);
 });
 
 app.on('window-all-closed', () => {

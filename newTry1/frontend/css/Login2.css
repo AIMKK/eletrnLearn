@@ -1,0 +1,134 @@
+
+
+body {
+  background: rgba(0, 0, 0, 0);
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.border{
+  position: absolute;   
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+ -webkit-app-region: drag;
+  background: #4B6283;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:0px; 
+}
+
+.login { 
+  -webkit-app-region: no-drag;
+  position: absolute;    
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  /*height: 300px;
+  margin-top: -150px;
+  margin-left: -200px;*/ 
+  -webkit-transform: translateX(-50%) translateY(-55%);
+  -moz-transform: translateX(-50%) translateY(-55%);
+  -ms-transform: translateX(-50%) translateY(-55%);
+  transform: translateX(-50%) translateY(-55%);
+  font-size: 16px; 
+}
+
+
+
+.login-header {   
+  -webkit-app-region: drag;
+  background: #28d;
+  padding: 10px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius:5px 5px 0px 0px; 
+}
+
+.login-header h2{
+  margin-top: 0;
+  margin-bottom: 0;  
+}
+.login-container {  
+  background: #ebebeb;
+  padding: 12px;
+}
+
+
+.login-container p {
+  margin-top: 0;
+  margin-bottom: 0;  
+  padding: 12px;
+}
+
+.login-container input {  
+  box-sizing: border-box;
+  display: block; 
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #888;
+}
+
+.commdBtn{
+  font-size: 0px;
+}
+.commdBtn .submitBtn,
+.commdBtn .exitBtn {  
+  width: 170px; 
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer; 
+}
+.commdBtn .submitBtn{
+  background: #28d;
+ 
+}
+.commdBtn .submitBtn:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.commdBtn .submitBtn:focus {
+  border-color: #05a;
+}
+
+.commdBtn .exitBtn{
+  background: #C6C9D6;
+}
+
+.commdBtn .exitBtn:hover {
+  background: #A7AFCE;
+}
+.commdBtn .exitBtn:focus {
+  border-color: #939BB9;
+}
+
+
+.commdBtn input {
+  display:inline;
+  font-size: 14px;   
+}
+
+.exitBtn{
+  margin-left: 10px;  
+}
