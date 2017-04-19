@@ -1,5 +1,6 @@
 body{
     background: rgba(0, 0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
 }
 .loginUI{
     position: absolute;
@@ -7,6 +8,7 @@ body{
     left: 0px;
     right: 0px;
     bottom: 0px;
+    
 }
 .header{
     -webkit-app-region: drag;
@@ -24,9 +26,63 @@ body{
 }
 .content{
     background: #FAFBFD;  
-    padding: 10px;     
+    padding: 12px;     
 }
 .content p{
     margin-top: 0;
     margin-bottom: 0;   
+    padding: 10px;
+}
+.content input{
+    box-sizing: border-box;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;    
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.content-userName,
+.content-password{   
+    width: 100%;
+    display: block; 
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+}
+.content-userName:focus,
+.content-password:focus{   
+    border-color: #888;
+}
+.content-horigapClear{
+    font-size: 0px;
+}
+.content-horigapClear input{
+    display: inline;
+}
+.content-submit,
+.content-exit{    
+    width: 50%;
+    font-size: 14px;   
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;    
+}
+.content-submit{
+     background: #28d;     
+}
+.content-submit:hover{
+     background: #17c;     
+}
+.content-submit:focus{
+     border-color: #05a;     
+}
+.content-exit{
+    background: #C6C9D6;
+    /*margin-left: 10px;*/
+}
+.content-exit:hover{
+    background: #A7AFCE;    
+}
+.content-exit:focus{
+    border-color: #939BB9;    
 }

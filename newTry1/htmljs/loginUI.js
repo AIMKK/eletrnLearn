@@ -7,7 +7,7 @@ function loginUI(BrowserWindow) {
          if (!BrowserWindow||!createUI)
             return null;
         var win = createUI(BrowserWindow,{
-            width: 800, height: 450, frame: false
+            width: 400, height: 250, frame: false
             , resizable: false
             //,transparent: true 
 
