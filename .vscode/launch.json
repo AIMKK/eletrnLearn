@@ -5,23 +5,32 @@
     "version": "0.2.0",
     "configurations": [      
         {
-          "type": "node",
-          "request": "attach",
-          "name": "Attach to Process",
-          "processId": "${command:PickProcess}",
-          "port": 5858
-        }, 
-        {
             "type": "node",
             "request": "launch",
-            "name": "Electron Main test",
-            "cwd": "${workspaceRoot}",
+            "name": "Electron Main",
             
-             "runtimeExecutable": "${workspaceRoot}/run.cmd",
-            "program": "${workspaceRoot}/main.js",
-            "protocol": "inspector",
-             "address": "localhost",
-             "port": 5858
+            "program": "${workspaceRoot}/newTry1/main.js",
+            "protocol": "legacy"
         }
+        // ,
+        // {
+        //   "type": "node",
+        //   "request": "attach",
+        //   "name": "Attach to Process",
+        //   "processId": "${command:PickProcess}",
+        //   "port": 5858
+        // }, 
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "Electron Main test",
+        //     "cwd": "${workspaceRoot}",
+            
+        //      "runtimeExecutable": "${workspaceRoot}/run.cmd",
+        //     "program": "${workspaceRoot}/main.js",
+        //     "protocol": "inspector",
+        //      "address": "localhost",
+        //      "port": 5858
+        // }
     ]
 }
