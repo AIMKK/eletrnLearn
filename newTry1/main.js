@@ -4,6 +4,7 @@ const { BrowserWindow } = electron;
 const { ipcMain } = electron;
 
 const windowManager = require('electron-window-manager');
+
 // var loginUI = require('./htmljs/loginUI');
 // var mainUI;
 let win;
@@ -19,6 +20,7 @@ let win;
 app.on('ready', () => {    
     var UI = require('./htmljs/mainUI');
     UI(windowManager);
+  
 })
 
 app.on('window-all-closed', () => {
