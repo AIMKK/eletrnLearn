@@ -17,10 +17,11 @@ let win;
 // });
 
 //
-app.on('ready', () => {    
-    var UI = require('./htmljs/mainUI');
-    UI(windowManager);
-  
+app.on('ready', () => { 
+    //
+    windowManager.init();   
+    var mainUI = require('./htmljs/mainUI');
+    mainUI.Show();
 })
 
 app.on('window-all-closed', () => {

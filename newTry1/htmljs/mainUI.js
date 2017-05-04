@@ -28,23 +28,27 @@
 
 // module.exports = mainUI;
 
-function mainUI(windowManager) {
+const windowManager = require('electron-window-manager');
+//
+function Show() {
     try {
         if (!windowManager)
-            return null;            
-        //
-        windowManager.init({
+            return null; 
+        //Open a window
+        windowManager.open('mainUI', 'MainUI','/../frontend/html/mainUI.html',null,{
             width: 1000, height: 600
             , frame: false
             //, resizable: false
             //,transparent: true 
         });
-        // Open a window
-        windowManager.open('mainUI', 'MainUI','/../frontend/html/mainUI.html');
         //windowManager.open('mainui', 'Welcome mainui', '/../frontend/html/mainUI.html');
     }
     catch (exception) {
 
     }
+}
+//
+var mainUI={
+    Show:Show
 }
 module.exports = mainUI;
