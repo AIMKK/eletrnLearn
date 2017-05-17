@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "main": "main.js",
   "dependencies": {
-    "electron-window-manager": "^1.0.4"
+    "electron-window-manager": "^1.0.4",
+    "express": "^4.15.2",
+    "koa": "^2.2.0"
   }
 }

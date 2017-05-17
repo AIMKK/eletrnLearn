@@ -1,0 +1,84 @@
+body{
+    background: rgba(0, 0, 0, 0);
+}
+.container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  
+}
+.header{
+    position: absolute;
+    -webkit-app-region: drag;
+    top: 0px;
+    width: 100%;
+    height: 2px;
+    /*height: 2px;*/
+    background:#5394C8;  
+}
+
+.nav{
+    -webkit-app-region: drag;
+    position: absolute;
+    top: 2px;
+    width: 200px;
+    bottom: 0px;
+    background:#28435C;
+    overflow-y: auto;  
+}
+.main{
+    position: absolute;
+    top: 2px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    background: #FAFBFD;    
+}
+
+.titleStrip{   
+    position: absolute;
+    -webkit-app-region: drag;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 18px; 
+    background: #FAFAF7;
+    /*background:floralwhite;  */
+
+    text-align: center;    
+}
+.title{  
+    text-align: center;
+    /*line-height: 65px;  */
+    font-family: sans-serif;
+    color:#5394C8;
+}
+.sysBtn{
+    -webkit-app-region:no-drag;
+    float: right;
+    text-align: center;
+    /*line-height: 65px;  */
+    font-family: sans-serif;
+    color:black;
+    margin: 2px;   
+}
+.content{
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  
+    overflow-y: auto;  
+}
+
+.testFunc{
+    float: left;
+    width: 150px;
+    height: 65px;
+    background:#E8E8EC;  
+    text-align: center;
+    line-height: 65px;  
+    margin: 5px;
+    font-family: sans-serif;
+}

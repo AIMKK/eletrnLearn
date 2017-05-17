@@ -35,10 +35,10 @@ function Show() {
         if (!windowManager)
             return null; 
         //Open a window
-        windowManager.open('mainUI', 'MainUI','/../frontend/html/mainUI.html',null,{
+        windowManager.open('mainUI', 'MainUI','/../frontend/html/mainUI2.html',null,{
             width: 1000, height: 600
             , frame: false
-            //, resizable: false
+            , resizable: true            
             //,transparent: true 
         });
         //windowManager.open('mainui', 'Welcome mainui', '/../frontend/html/mainUI.html');
