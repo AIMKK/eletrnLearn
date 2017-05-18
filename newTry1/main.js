@@ -2,8 +2,8 @@ const electron = require('electron');
 const { app } = electron;
 const { BrowserWindow } = electron;
 const { ipcMain } = electron;
-
 const windowManager = require('electron-window-manager');
+const GlobalInfo=require('./Comm/GlobalInfo');
 
 // var loginUI = require('./htmljs/loginUI');
 // var mainUI;
@@ -20,8 +20,11 @@ let win;
 app.on('ready', () => { 
     //
     windowManager.init();   
-    var mainUI = require('./htmljs/mainUI');
-    mainUI.Show();
+    // var mainUI = require('./htmljs/mainUI');
+    // mainUI.Show();
+GlobalInfo.userCode='dfd';
+    var loginUI = require('./htmljs/loginUI');
+    loginUI.Show();
 })
 
 app.on('window-all-closed', () => {
@@ -37,14 +40,22 @@ app.on('activate', () => {
 });
 
 // open,
-ipcMain.on('open-window', function (name,title,url) {
-    windowManager.init({});
-    // Open a window
-    windowManager.open(name, title, url);
+ipcMain.on('open-window', function (event, url) {
+    console.log(url);
+    var UI = require(url);
+    UI.Show();
 });
 
 // close
-ipcMain.on('close-window', function (name) {
-    //close
-    windowManager.close(name);
+ipcMain.on('close-window', function (event, winName) { 
+    try{
+         console.log(GlobalInfo.userCode);
+        //close
+        windowManager.close(winName);  
+    } 
+    catch (exception){
+
+    }
+   
 });
+
