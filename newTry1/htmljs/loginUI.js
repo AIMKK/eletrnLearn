@@ -14,6 +14,7 @@ function Show() {
         windowManager.open('loginUI', 'loginUI','/../frontend/html/loginUI.html',null,{
             width: 400, height: 250, frame: false
             , resizable: false
+            ,icon: __dirname + '/../images/icon.png'
             //,transparent: true 
         });
     }

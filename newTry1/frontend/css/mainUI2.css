@@ -55,6 +55,7 @@ body{
     color:#5394C8;
 }
 .sysBtn{
+    -webkit-user-select: none;
     -webkit-app-region:no-drag;
     float: right;
     text-align: center;

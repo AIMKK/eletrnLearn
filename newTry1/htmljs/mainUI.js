@@ -38,7 +38,8 @@ function Show() {
         windowManager.open('mainUI', 'MainUI','/../frontend/html/mainUI2.html',null,{
             width: 1000, height: 600
             , frame: false
-            , resizable: true            
+            , resizable: true  
+            ,icon: __dirname + '/../images/icon.png'          
             //,transparent: true 
         });
         //windowManager.open('mainui', 'Welcome mainui', '/../frontend/html/mainUI.html');

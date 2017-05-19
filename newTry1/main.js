@@ -3,27 +3,17 @@ const { app } = electron;
 const { BrowserWindow } = electron;
 const { ipcMain } = electron;
 const windowManager = require('electron-window-manager');
-const GlobalInfo=require('./Comm/GlobalInfo');
-
-// var loginUI = require('./htmljs/loginUI');
-// var mainUI;
+const GlobalInfo=require('./Comm/GlobalInfo.js');
+global.APPGlobalInfo = GlobalInfo;
 let win;
 
-// app.on('ready', () => {   
-//      var UI = require('./htmljs/mainUI');
-//     UI(BrowserWindow);
-//     loginUI = require('./htmljs/loginUI');
-//     loginUI(BrowserWindow);
-// });
-
 //
-app.on('ready', () => { 
+app.on('ready', () => {
     //
-    windowManager.init();   
+    windowManager.init();
     // var mainUI = require('./htmljs/mainUI');
-    // mainUI.Show();
-GlobalInfo.userCode='dfd';
-    var loginUI = require('./htmljs/loginUI');
+    // mainUI.Show();    
+    var loginUI = require('./htmljs/loginUI.js');
     loginUI.Show();
 })
 
@@ -40,22 +30,20 @@ app.on('activate', () => {
 });
 
 // open,
-ipcMain.on('open-window', function (event, url) {
-    console.log(url);
+ipcMain.on('open-window', function (event, url) {   
     var UI = require(url);
     UI.Show();
 });
 
 // close
-ipcMain.on('close-window', function (event, winName) { 
-    try{
-         console.log(GlobalInfo.userCode);
+ipcMain.on('close-window', function (event, winName) {
+    try {      
         //close
-        windowManager.close(winName);  
-    } 
-    catch (exception){
+        windowManager.close(winName);
+    }
+    catch (exception) {
 
     }
-   
+
 });
 

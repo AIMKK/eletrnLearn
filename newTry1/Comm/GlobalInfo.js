@@ -1,7 +1,7 @@
 'use strict';
 //
 var GlobalInfo={
-    userCode:"",
+    userCode:"test889",
     locationCode:"",
     loginIP:""
 }
