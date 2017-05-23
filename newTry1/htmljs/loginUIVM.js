@@ -3,7 +3,7 @@
   var ipc = electron.ipcRenderer;
   var remote = electron.remote;  
   var APPGlobalInfo = remote.getGlobal('APPGlobalInfo');
-
+  
   new Vue({
     el: '#LogBody',
     data: {

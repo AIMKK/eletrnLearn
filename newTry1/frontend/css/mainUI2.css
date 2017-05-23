@@ -24,7 +24,9 @@ body{
     top: 2px;
     width: 200px;
     bottom: 0px;
+    /*background:#333333;*/
     background:#28435C;
+    /*background:#585252;*/
     overflow-y: auto;  
 }
 .main{
@@ -42,8 +44,9 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 18px; 
-    background: #FAFAF7;
+    height: 20px; 
+    background: #FFBE00;
+    /*background: #FAFAF7;*/
     /*background:floralwhite;  */
 
     text-align: center;    
@@ -66,7 +69,7 @@ body{
 }
 .content{
     position: absolute;
-    top: 18px;
+    top: 20px;
     left: 0px;
     right: 0px;
     bottom: 0px;  

@@ -4,16 +4,16 @@ const { BrowserWindow } = electron;
 const { ipcMain } = electron;
 const windowManager = require('electron-window-manager');
 const GlobalInfo=require('./Comm/GlobalInfo.js');
+// const GlobalInfo2=require('./coMM/GlobalInfo.js');
 global.APPGlobalInfo = GlobalInfo;
 let win;
-
+ 
 //
-app.on('ready', () => {
-    //
+app.on('ready', () => {   
     windowManager.init();
     // var mainUI = require('./htmljs/mainUI');
     // mainUI.Show();    
-    var loginUI = require('./htmljs/loginUI.js');
+    var loginUI = require('./htmljs/loginUI.js');    
     loginUI.Show();
 })
 

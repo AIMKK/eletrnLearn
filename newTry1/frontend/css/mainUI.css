@@ -1,62 +1,82 @@
 body{
     background: rgba(0, 0, 0, 0);
 }
-.mainUI{
-    position:  absolute;
+.uiForm{
+    position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
-    bottom: 0px;    
+    bottom: 0px;  
+}
+.header{
+    -webkit-app-region: drag;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 24px;  
+    background: #FFBE00;
+    background: #CA5100;
+    text-align: center;
+    
+}
+.title{  
+    text-align: center;  
+    line-height: 24px;    
+    font-family: sans-serif;
+    color:#FFBE00;
+}
+.sysBtn{    
+    -webkit-app-region:no-drag;
+    float: right;
+    text-align: center;    
+    font-family: sans-serif;
+    color:black;
+    margin: 2px;   
+}
+.headerSpliter{
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    right: 0px;
+    height: 1px;  
+    background: #5394C8;
+    background: #D8D8D8;
+}
+.content{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  
 }
 .nav{
     -webkit-app-region: drag;
     position: absolute;
     top: 0px;
     left: 0px;
-    bottom:0px;  
     width: 200px;
-    background:#28435C;
+    bottom: 0px;    
+    background:#28435C;   
+    background:#CBC4C6;
+    overflow-y: auto;  
 }
-.nav-header{   
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0px;
-    height: 2px;
-    background:#5394C8;  
-}
-.content{
+.main{
     position: absolute;
     top: 0px;
     left: 200px;
     right: 0px;
-    bottom: 0px;
-    background: #FAFBFD;    
+    bottom: 0px;    
+    background: #FAFBFD; 
+    overflow-y: auto;  
 }
-.content-header{
-    -webkit-app-region: drag;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0px;
-    height: 2px;
-    /*background:#5394C8;*/
-    background: #5394C8;
-    /*background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#6C8BAA), to(#2B435B));*/
-}
-.content-header-spliter{
-    position: absolute;   
-    left: 0px;
-    right: 0px;
-    height: 0px; 
-    bottom: 0px;   
-    background: #5394C8;
-}
-.content-footer{
-    position:absolute;
-    bottom: 0px;
-    height: 0px;
-    left: 0px;
-    right: 0px;
-    background: #DADADA;
+.testFunc{
+    float: left;
+    width: 150px;
+    height: 65px;
+    background:#E8E8EC;  
+    text-align: center;
+    line-height: 65px;  
+    margin: 5px;
+    font-family: sans-serif;
 }

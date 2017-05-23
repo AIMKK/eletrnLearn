@@ -1,4 +1,7 @@
 'use strict';
+
+// console.log(module.filename)
+
 //
 var GlobalInfo={
     userCode:"test889",

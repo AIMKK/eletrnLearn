@@ -11,12 +11,12 @@ function Show() {
         //
         windowManager.init();
         // Open a window
-        windowManager.open('loginUI', 'loginUI','/../frontend/html/loginUI.html',null,{
+        var win=windowManager.open('loginUI', 'loginUI','/../frontend/html/loginUI.html',null,{
             width: 400, height: 250, frame: false
             , resizable: false
             ,icon: __dirname + '/../images/icon.png'
             //,transparent: true 
-        });
+        });        
     }
     catch (exception) {
     }
