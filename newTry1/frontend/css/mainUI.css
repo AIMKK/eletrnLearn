@@ -14,15 +14,16 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 24px;  
+    height: 28px;  
     background: #FFBE00;
-    background: #CA5100;
+    background: #E06415;
+    background: #0099CB;    
     text-align: center;
     
 }
 .title{  
     text-align: center;  
-    line-height: 24px;    
+    line-height: 28px;    
     font-family: sans-serif;
     color:#FFBE00;
 }
@@ -36,7 +37,7 @@ body{
 }
 .headerSpliter{
     position: absolute;
-    top: 24px;
+    top: 28px;
     left: 0px;
     right: 0px;
     height: 1px;  
@@ -45,7 +46,7 @@ body{
 }
 .content{
     position: absolute;
-    top: 25px;
+    top: 29px;
     left: 0px;
     right: 0px;
     bottom: 0px;  
@@ -59,6 +60,7 @@ body{
     bottom: 0px;    
     background:#28435C;   
     background:#CBC4C6;
+    background:#36434D;
     overflow-y: auto;  
 }
 .main{
@@ -68,6 +70,7 @@ body{
     right: 0px;
     bottom: 0px;    
     background: #FAFBFD; 
+    background: #ECEFF4;
     overflow-y: auto;  
 }
 .testFunc{
