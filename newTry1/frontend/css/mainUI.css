@@ -14,7 +14,7 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 28px;  
+    height: 27px;  
     padding: 0px;   
     background: #FFBE00;
     background: #E06415;
@@ -24,7 +24,7 @@ body{
 }
 .title{  
     text-align: center;  
-    line-height: 28px;    
+    line-height: 27px;    
     font-family: sans-serif;
     color:#FFBE00;
 }
@@ -38,18 +38,18 @@ body{
 }
 .headerSpliter{
     position: absolute;
-    top: 28px;
+    top: 27px;
     left: 0px;
     right: 0px;
     height: 1px;  
     padding: 0px;   
     background: #5394C8;
-    background: #C1C1C1;
+    background: #36A7D1;
     background: #36AAD2;
 }
 .content{
     position: absolute;
-    top: 29px;
+    top: 28px;
     left: 0px;
     right: 0px;
     bottom: 0px;  

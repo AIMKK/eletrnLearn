@@ -2,7 +2,7 @@
   var electron = require('electron');
   var ipc = electron.ipcRenderer;
   var remote = electron.remote;  
-  var APPGlobalInfo = remote.getGlobal('APPGlobalInfo');
+  var globalInfo = remote.getGlobal('globalInfo');
   
   new Vue({
     el: '#LogBody',
@@ -16,8 +16,8 @@
           alert('用户名或密码不能空白！');
         }
         else if (this.userName == 'admin' && this.pwd == '123') {          
-          APPGlobalInfo.userCode = this.userName;          
-          APPGlobalInfo.loginIP = '';
+          globalInfo.userCode = this.userName;          
+          globalInfo.loginIP = '';
           
           //
           ipc.send('open-window', './htmljs/mainUI.js');

@@ -3,9 +3,8 @@ const { app } = electron;
 const { BrowserWindow } = electron;
 const { ipcMain } = electron;
 const windowManager = require('electron-window-manager');
-const GlobalInfo=require('./Comm/GlobalInfo.js');
-// const GlobalInfo2=require('./coMM/GlobalInfo.js');
-global.APPGlobalInfo = GlobalInfo;
+const globalInfo=require('./Comm/GlobalInfo.js');
+global.globalInfo = globalInfo;
 let win;
  
 //
