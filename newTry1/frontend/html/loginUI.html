@@ -10,23 +10,25 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 
-<body>  
-    <div class="loginUI">
+<body>    
+    <div class="uiForm">
         <div class="header">
-             <h2 class="header-title">Log in</h2>
+            <p class="title">Log in</p>
         </div>
         <div id="LogBody" class="content">
-            <p><input class="content-userName" type="text" placeholder="UserName" v-model="userName" ></p>
-            <p><input class="content-password" type="password" placeholder="Password" v-model="pwd"></p>
-            <p  class="content-horigapClear">
-                <input class="content-submit" type="button"  v-on:click="logIn" value="Log in">
+            <div class="inputTxt">
+                <p><input class="userName" type="text" placeholder="UserName" v-model="userName" /></p>
+                <p><input class="password" type="text" placeholder="Password" v-model="pwd" /></p>
+            </div>
+            <div class="inputBtn">
+                <input class="submitBtn" type="button" v-on:click="logIn" value="Log in" />
                 
-                <input class="content-exit" type="button" v-on:click="logOut" value="Log out">
-            </p>
+                <input class="exitBtn" type="button" v-on:click="logOut" value="Log out" />
+            </div>
         </div>
     </div>
     <script src="../../../vue/vue.js"></script>
-    <script src="../../htmljs/loginUIVM.js"></script>   
+    <script src="../../htmljs/loginUIVM.js"></script>
 </body>
 
 </html>
