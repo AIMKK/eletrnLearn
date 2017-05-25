@@ -7,7 +7,7 @@ function Show() {
         if (!windowManager)
             return null; 
         //Open a window
-        windowManager.open('mainUI', 'MainUI','/../frontend/html/mainUI.html',null,{
+        windowManager.open('mainUI', 'mainUI','/../frontend/html/mainUI.html',null,{
             width: 1000, height: 600
             , frame: false
             , resizable: true  

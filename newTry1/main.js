@@ -37,7 +37,7 @@ ipcMain.on('open-window', function (event, url) {
 // close
 ipcMain.on('close-window', function (event, winName) {
     try {      
-        //close
+        //close        
         windowManager.close(winName);
     }
     catch (exception) {
@@ -45,4 +45,29 @@ ipcMain.on('close-window', function (event, winName) {
     }
 
 });
+
+// minimize
+ipcMain.on('minimize-window', function (event, winName) {
+    try {      
+        //minimize        
+        windowManager.minimize(winName);
+    }
+    catch (exception) {
+
+    }
+
+});
+
+// maximize
+ipcMain.on('maximize-window', function (event, winName) {
+    try {      
+        //maximize        
+        windowManager.maximize(winName);
+    }
+    catch (exception) {
+
+    }
+
+});
+
 

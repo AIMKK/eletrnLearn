@@ -22,19 +22,60 @@ body{
     text-align: center;
     
 }
-.title{  
-    text-align: center;  
-    line-height: 27px;    
-    font-family: sans-serif;
-    color:#FFBE00;
+#titleBar {
+    -webkit-app-region: drag;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;   
+    text-align: center;
+    line-height: 27px;
 }
-.sysBtn{    
-    -webkit-app-region:no-drag;
-    float: right;
-    text-align: center;    
-    font-family: sans-serif;
-    color:black;
-    margin: 2px;   
+#title {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    bottom: 0px; 
+    font-family: sans-serif;  
+    color:#000;
+}
+#titleIcon{
+    vertical-align: middle;
+    width:20px;
+    height:20px;
+}
+#titleBarBtns {
+    -webkit-app-region: no-drag;
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    bottom:4px;   
+    cursor: default;
+    border-width: 0px;    
+}
+#minBtn,#maxBtn,#closeBtn{
+    float: left; 
+    margin: 0px;
+    padding: 0px;
+    width:35px;
+    height: 100%;
+    color: #1E1E1E;
+    background: transparent;
+    font-family: sans-serif;  
+    font-size: 20px;  
+    font-weight: blod;
+    outline:none;
+    border-width: 0px;    
+    border-style:none;    
+}
+#minBtn:hover,#maxBtn:hover,#closeBtn:hover{   
+    background: #FDFDFD;
+}
+#minBtn:focus,#maxBtn:focus,#closeBtn:focus{ 
+    background: #DEDEE3;
 }
 .headerSpliter{
     position: absolute;

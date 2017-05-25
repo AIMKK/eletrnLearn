@@ -12,14 +12,18 @@
 <body>
     <div class="uiForm">
         <div class="header">
-            <span class="title">title</span>           
-            <div class="sysBtn">X</div>
-            <div class="sysBtn">+</div>
-            <div class="sysBtn">－</div>
-            <div class="formTitle">
-                <span class="icon">Icon</span>
-                <span class="title">mainUI</span>
-                
+            <div id="titleBar">
+                <div id="title">
+                    <span>
+                        <img id="titleIcon" src="../../images/icon.png" />
+                    </span> 
+                    Frameless (But draggable,resizable and closable Window)
+                </div>
+                <div id="titleBarBtns">
+                    <button id="minBtn" class="sysBtn" v-on:click="minimize" v-on:mouseleave="mouseleave">-</button>
+                    <button id="maxBtn" class="sysBtn" v-on:click="maximize" v-on:mouseleave="mouseleave">+</button>
+                    <button id="closeBtn" class="sysBtn" v-on:click="close" v-on:mouseleave="mouseleave">x</button>
+                </div>
             </div>
         </div>
         <div class="headerSpliter"></div>
