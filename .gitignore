@@ -1,4 +1,4 @@
 #ignore these 
 node_modules
-upload\upload-files
-upload-async\static\image\album
+upload/upload-files
+upload-async/static/image/album
