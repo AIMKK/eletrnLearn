@@ -1,0 +1,41 @@
+USE [iRMS]
+GO
+/****** Object:  StoredProcedure [dbo].[SP_LocationIPSearch]    Script Date: 2016/9/26 13:48:39 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+  PROCEDURE [dbo].[SP_LocationIPSearch] 
+	@IPAddress VARCHAR(15),
+	@MachineName VARCHAR(15),
+	@LanguageCode VARCHAR(10)
+AS
+	
+	SELECT distinct a.LocationCode, c.[Description], b.CompanyCode,b.groupnature, Active, Remark
+	FROM LocationIP a, Location b, descriptionmaster c
+	WHERE a.LocationCode = b.LocationCode
+	AND a.IPAddress in (@IPAddress,@MachineName)	
+	AND a.Active = 'Y'
+	and b.locationcode = c.descriptioncode	
+	and c.descriptiontable = 'LOCATION'
+	and c.descriptionfield = 'LocationName'
+	and c.languagecode = @LanguageCode
+	ORDER BY 1
+
+	-- zhelishiliangge,
+
+	
+using (TransactionScope ts = new TransactionScope())
+            {
+                userBLL u = new userBLL();
+                TeacherBLL t = new TeacherBLL();
+                u.ADD();
+                t.ADD();
+                ts.Complete();
+            }
+
+-- exec sp_locationIPSearch '172.18.102.73',null,'chi'
+
+
+select * from descriptionmaster

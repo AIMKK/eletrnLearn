@@ -1,4 +1,4 @@
-
+'use strict';
 (function () {
     try {
         var electron = require('electron');
