@@ -8,10 +8,7 @@ global.globalInfo = globalInfo;
 let win;
  
 //
-app.on('ready', () => {   
-    windowManager.init();
-    // var mainUI = require('./htmljs/mainUI');
-    // mainUI.Show();    
+app.on('ready', () => {
     var loginUI = require('./htmljs/loginUI.js');    
     loginUI.Show();
 })

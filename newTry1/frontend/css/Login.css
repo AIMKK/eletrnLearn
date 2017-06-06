@@ -95,11 +95,12 @@ body{
 }
 .exitBtn{
     background: #B4B2B2;
+    background: #A7B2C6;
 }
 .submitBtn:hover,.exitBtn:hover{   
     background: #007ACC;
 }
-.submitBtn:focus,.exitBtn:focus{   
+.submitBtn:focus,.exitBtn:focus{
     border-color: #E1BA6E;
     outline-color: #E9C37B;
 }
