@@ -17,10 +17,9 @@ body{
     height: 27px;  
     padding: 0px;   
     background: #FFBE00;
-    background: #E06415;
-    background: #0099CB;    
+    background: #2E8B57;
+    background: #0099CB;
     text-align: center;
-    
 }
 #titleBar {
     -webkit-app-region: drag;
@@ -84,9 +83,10 @@ body{
     right: 0px;
     height: 1px;  
     padding: 0px;   
-    background: #5394C8;
-    background: #36A7D1;
+    background: #5394C8;  
+    background: #009D5F; 
     background: #36AAD2;
+    background: #2998E3;   
 }
 .content{
     position: absolute;
@@ -102,9 +102,9 @@ body{
     left: 0px;
     width: 200px;
     bottom: 0px;    
-    background:#28435C;   
-    background:#CBC4C6;
-    background:#36434D;
+    background:#28435C;
+    background:#FFFAF0;
+    background:#36434D;   
     overflow-y: auto;  
 }
 .main{
@@ -114,7 +114,8 @@ body{
     right: 0px;
     bottom: 0px;    
     background: #FAFBFD; 
-    background: #ECEFF4;
+    background: #FFFAF0;
+    background: #ECEFF4;  
     overflow-y: auto;  
 }
 .testFunc{
