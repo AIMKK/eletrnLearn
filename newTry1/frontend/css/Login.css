@@ -54,7 +54,8 @@ body{
     box-sizing: border-box;
     padding: 10px;
     border-width: 1px;
-    border-style:solid;    
+    border-style:solid; 
+    border-color: #ECEFF4;
     /*outline: 0;*/
     font-family: 'Open Sans', sans-serif;
 }
@@ -95,7 +96,7 @@ body{
 }
 .exitBtn{
     background: #B4B2B2;
-    background: #A7B2C6;
+    background: #D3DBE5;
 }
 .submitBtn:hover,.exitBtn:hover{   
     background: #007ACC;
