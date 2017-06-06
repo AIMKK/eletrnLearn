@@ -15,6 +15,8 @@ function Show() {
             width: 400, height: 250, frame: false
             , resizable: false
             ,icon: __dirname + '/../images/icon.png'
+            ,backgroundColor: '#0099CB'    
+            ,show: false
             //,transparent: true 
         });        
     }
