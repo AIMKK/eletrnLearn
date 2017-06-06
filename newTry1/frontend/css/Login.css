@@ -56,6 +56,7 @@ body{
     border-width: 1px;
     border-style:solid; 
     border-color: #ECEFF4;
+    border-color: transparent;
     /*outline: 0;*/
     font-family: 'Open Sans', sans-serif;
 }
