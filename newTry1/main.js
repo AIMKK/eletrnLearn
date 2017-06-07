@@ -10,7 +10,15 @@ let win;
 //
 app.on('ready', () => {
     var loginUI = require('./htmljs/loginUI.js');    
-    loginUI.Show();
+    loginUI.show();
+    // var win=loginUI.CreateNew();
+    // win.create();
+    // console.log('here1')
+    // win.onReady(true,function(a,b){
+    //     a.object.show();
+    // })
+    // console.log('here')
+  
 })
 
 app.on('window-all-closed', () => {
@@ -28,7 +36,7 @@ app.on('activate', () => {
 // open,
 ipcMain.on('open-window', function (event, url) {   
     var UI = require(url);
-    UI.Show();
+    UI.show();
 });
 
 // close
